@@ -51,7 +51,7 @@ With a local reference we are able to work with any properties of any HTML eleme
 8. (5.13) @ViewChild: Using this annotation is similar to Local Reference, however we dont need to pass the Local Reference variable in a method.
 Refer to cockpit.component.ts
 Usage: @ViewChild('newServerContent') ServerContent!: ElementRef;
-9. <ng-content> : projecting content (Need to lear more.)
+9. (5.14) "ng-content" : projecting content (Need to lear more.)
 10. Lifecycle hooks: 
     a. ngOnchanges : Called after a bound input property changes.
     b. ngOnInit : Called once the component is initialized. It is called after the constructor.
