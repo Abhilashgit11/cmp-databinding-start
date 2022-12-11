@@ -53,14 +53,14 @@ Refer to cockpit.component.ts
 Usage: @ViewChild('newServerContent') ServerContent!: ElementRef;
 9. (5.14) "ng-content" : projecting content (Need to lear more.)
 10. Lifecycle hooks: 
-    a. ngOnchanges : Called after a bound input property changes.
-    b. ngOnInit : Called once the component is initialized. It is called after the constructor.
-    c. ngDoCheck : Called during every change detection run.
-    d. ngafterContentInit : Called after content(ng-content) has been projected into view.
-    e. ngafterContentChecked : Called everytime the projected content has been checked.
-    f. ngAfterViewInit : Called after the component's view (and child views) has been initialized.
-    g. ngAfterViewChecked : Called everytime the view (and child views) has been checked.
-    h. ngOnDestroy : Called once the component is about to be destroyed.
+    1. ngOnchanges : Called after a bound input property changes.
+    2. ngOnInit : Called once the component is initialized. It is called after the constructor.
+    3. ngDoCheck : Called during every change detection run.
+    4. ngafterContentInit : Called after content(ng-content) has been projected into view.
+    5. ngafterContentChecked : Called everytime the projected content has been checked.
+    6. ngAfterViewInit : Called after the component's view (and child views) has been initialized.
+    7. ngAfterViewChecked : Called everytime the view (and child views) has been checked.
+    8. ngOnDestroy : Called once the component is about to be destroyed.
 Note: References vs primitive types (https://academind.com/tutorials/reference-vs-primitive-values) 
 Additional info on the above note: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign
 11. (5.19) @ContentChild : Using this annotation we can access the HTML element placed(by using           <ng-content>) between selector tag in its parent component.
