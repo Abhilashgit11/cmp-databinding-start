@@ -71,7 +71,8 @@ Additional info on the above note: https://developer.mozilla.org/en-US/docs/Web/
     Usage: We can access the "p" tag by using the Local Reference variable "contentParagraph"
 
 #### In server-element.component.html
-@ContentChild('contentParagraph', {static: true}) paragraph!: ElementRef;
+
+    @ContentChild('contentParagraph', {static: true}) paragraph!: ElementRef;
 #### In app.ccomponent.html 
 
     <app-server-element 
