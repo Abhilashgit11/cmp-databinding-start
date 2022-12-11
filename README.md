@@ -66,7 +66,7 @@ Note: References vs primitive types (https://academind.com/tutorials/reference-v
 
 Additional info on the above note: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign
 
-11. (5.19) @ContentChild : Using this annotation we can access the HTML element placed(by using           <ng-content>  tag) between selector tag in its parent component.
+11. (5.19) @ContentChild : Using this annotation we can access the HTML element placed(by using   "ng-content"  tag) between selector tag in its parent component.
     For instance: as the "p" tag is placed inside the "app-server-element" tag
     Usage: We can access the "p" tag by using the Local Reference variable "contentParagraph"
 
