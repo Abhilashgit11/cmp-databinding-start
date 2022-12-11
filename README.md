@@ -65,9 +65,10 @@ Usage: @ViewChild('newServerContent') ServerContent!: ElementRef;
 Note: References vs primitive types (https://academind.com/tutorials/reference-vs-primitive-values) 
 
 Additional info on the above note: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign
-11. (5.19) @ContentChild : Using this annotation we can access the HTML element placed(by using           <ng-content>) between selector tag in its parent component.
-    For instance: as the <p> tag is placed inside the <app-server-element>
-    Usage: We can access the <p> tag by using the Local Reference variable "contentParagraph"
+
+11. (5.19) @ContentChild : Using this annotation we can access the HTML element placed(by using           "ng-content" tag) between selector tag in its parent component.
+    For instance: as the "p" tag is placed inside the "app-server-element" tag
+    Usage: We can access the "p" tag by using the Local Reference variable "contentParagraph"
 
     In server-element.component.html
     @ContentChild('contentParagraph', {static: true}) paragraph!: ElementRef;
