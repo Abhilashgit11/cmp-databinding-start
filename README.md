@@ -70,19 +70,19 @@ Additional info on the above note: https://developer.mozilla.org/en-US/docs/Web/
     For instance: as the "p" tag is placed inside the "app-server-element" tag
     Usage: We can access the "p" tag by using the Local Reference variable "contentParagraph"
 
-    In server-element.component.html
-    @ContentChild('contentParagraph', {static: true}) paragraph!: ElementRef;
-    In app.ccomponent.html 
-    <app-server-element 
-        *ngFor = "let serverElement of serverElements"
-        [srvElement] = "serverElement"
-        [name] = "serverElement.name"
-        >
-            <p #contentParagraph>
-            <strong *ngIf="serverElement.type === 'server'" style="color: red">{{ serverElement.content }}</strong>
-            <em *ngIf="serverElement.type === 'blueprint'">{{ serverElement.content }}</em>
-            </p>
-    </app-server-element>
+In server-element.component.html
+@ContentChild('contentParagraph', {static: true}) paragraph!: ElementRef;
+In app.ccomponent.html 
+<app-server-element 
+    *ngFor = "let serverElement of serverElements"
+    [srvElement] = "serverElement"
+    [name] = "serverElement.name"
+    >
+        <p #contentParagraph>
+        <strong *ngIf="serverElement.type === 'server'" style="color: red">{{ serverElement.content }}</strong>
+        <em *ngIf="serverElement.type === 'blueprint'">{{ serverElement.content }}</em>
+        </p>
+</app-server-element>
 12. Assignment:
 
     1. Create three new components. GameControl, Odd and Even
