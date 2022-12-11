@@ -73,6 +73,7 @@ Additional info on the above note: https://developer.mozilla.org/en-US/docs/Web/
 #### In server-element.component.html
 @ContentChild('contentParagraph', {static: true}) paragraph!: ElementRef;
 #### In app.ccomponent.html 
+
 <app-server-element 
     *ngFor = "let serverElement of serverElements"
     [srvElement] = "serverElement"
