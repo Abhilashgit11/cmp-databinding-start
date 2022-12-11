@@ -70,9 +70,9 @@ Additional info on the above note: https://developer.mozilla.org/en-US/docs/Web/
     For instance: as the "p" tag is placed inside the "app-server-element" tag
     Usage: We can access the "p" tag by using the Local Reference variable "contentParagraph"
 
-# In server-element.component.html
+###### In server-element.component.html
 @ContentChild('contentParagraph', {static: true}) paragraph!: ElementRef;
-# In app.ccomponent.html 
+###### In app.ccomponent.html 
 <app-server-element 
     *ngFor = "let serverElement of serverElements"
     [srvElement] = "serverElement"
