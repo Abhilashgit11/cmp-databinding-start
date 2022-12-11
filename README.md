@@ -63,6 +63,7 @@ Usage: @ViewChild('newServerContent') ServerContent!: ElementRef;
     8. ngOnDestroy : Called once the component is about to be destroyed.
 
 Note: References vs primitive types (https://academind.com/tutorials/reference-vs-primitive-values) 
+
 Additional info on the above note: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign
 11. (5.19) @ContentChild : Using this annotation we can access the HTML element placed(by using           <ng-content>) between selector tag in its parent component.
     For instance: as the <p> tag is placed inside the <app-server-element>
