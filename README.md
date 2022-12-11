@@ -74,16 +74,16 @@ Additional info on the above note: https://developer.mozilla.org/en-US/docs/Web/
 @ContentChild('contentParagraph', {static: true}) paragraph!: ElementRef;
 #### In app.ccomponent.html 
 
-<app-server-element 
-    *ngFor = "let serverElement of serverElements"
-    [srvElement] = "serverElement"
-    [name] = "serverElement.name"
-    >
-        <p #contentParagraph>
-        <strong *ngIf="serverElement.type === 'server'" style="color: red">{{ serverElement.content }}</strong>
-        <em *ngIf="serverElement.type === 'blueprint'">{{ serverElement.content }}</em>
-        </p>
-</app-server-element>
+    <app-server-element 
+        *ngFor = "let serverElement of serverElements"
+        [srvElement] = "serverElement"
+        [name] = "serverElement.name"
+        >
+            <p #contentParagraph>
+            <strong *ngIf="serverElement.type === 'server'" style="color: red">{{ serverElement.content }}</strong>
+            <em *ngIf="serverElement.type === 'blueprint'">{{ serverElement.content }}</em>
+            </p>
+    </app-server-element>
 12. Assignment:
 
     1. Create three new components. GameControl, Odd and Even
